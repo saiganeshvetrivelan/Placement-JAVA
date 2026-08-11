@@ -2,6 +2,9 @@
 
 
 class subject{
+    void display(){
+        System.out.println("subject details");
+    }
     class maths{
         int code=2009;
         String teacher="gopal";
@@ -28,8 +31,10 @@ class subject{
         int mark=100;
     }
 }
-public class subject_management {
+public class subject_management extends subject{
     public static void main(String[] args) {
+        subject_management sm=new subject_management();
+        sm.display();
        subject s=new subject();
        subject.maths m=s.new maths();
        subject.physics p=s.new physics();
